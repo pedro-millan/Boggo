@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserva tu mesa en Boggo Fresh Bagel. Selecciona fecha, hora y personas. Restaurante presencial en Madrid.">
+  <title>Reserva tu mesa | Boggo</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/webp" href="assets/img/boggo-favicon.webp">
+</head>
+<body data-page="reserva">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Boggo Fresh Bagel — ir al inicio">
+      <img src="assets/img/logo-boggo-transparent.webp" alt="Boggo Fresh Bagel">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="site-navigation">Menú</button>
+    <nav class="site-nav" id="site-navigation" aria-label="Navegación principal">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="carta.html" data-nav="carta">Carta</a>
+      <a href="reserva.html" data-nav="reserva" aria-current="page">Reserva tu mesa</a>
+      <a href="club.html" data-nav="club">Club Boggo</a>
+      <a href="encuentranos.html" data-nav="encuentranos">Encuéntranos</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+
+<section class="page-hero" aria-label="Reservar mesa en Boggo">
+  <div class="container">
+    <div class="reveal-left">
+      <p class="eyebrow">Reserva tu mesa</p>
+      <h1>Tu mesa te espera.</h1>
+      <p class="lead">Selecciona fecha, hora y número de personas. Boggo es un restaurante presencial: reserva online y ven a disfrutarlo aquí.</p>
+    </div>
+    <div class="page-stamp reveal-right"><img src="assets/img/brand/BOGGO-29.webp" alt="Mensaje Boggo estilo diner"></div>
+  </div>
+</section>
+
+<section class="video-hero-banner form-section" aria-label="Formulario de reserva">
+  <div class="container form-shell">
+    <aside class="notice-card reveal-left" aria-label="Información importante sobre la reserva">
+      <img src="assets/img/brand/BOGGO-12.webp" alt="Mascota Boggo">
+      <h2>Importante</h2>
+      <p>No realizamos reparto a domicilio ni recogida online. La reserva sirve para asegurar tu mesa en el local y disfrutar allí tu pedido.</p>
+      <p><strong>Dirección:</strong> Calle Good Mood, 25 · Madrid<br><strong>Teléfono:</strong> <a href="tel:910000000">910 000 000</a></p>
+    </aside>
+    <form class="reservation-form reveal-right" id="reservation-form" aria-label="Formulario de reserva de mesa" novalidate>
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="name">Nombre <span aria-hidden="true">*</span></label>
+          <input id="name" name="name" required placeholder="Tu nombre" autocomplete="name" aria-required="true">
+        </div>
+        <div class="form-field">
+          <label for="phone">Teléfono <span aria-hidden="true">*</span></label>
+          <input id="phone" name="phone" required placeholder="Tu teléfono" autocomplete="tel" type="tel" aria-required="true">
+        </div>
+        <div class="form-field">
+          <label for="date">Fecha <span aria-hidden="true">*</span></label>
+          <input id="date" name="date" type="date" required aria-required="true">
+        </div>
+        <div class="form-field">
+          <label for="time">Hora <span aria-hidden="true">*</span></label>
+          <select id="time" name="time" required aria-required="true">
+            <option value="">Elige hora</option>
+            <option>10:00</option><option>11:30</option><option>13:00</option>
+            <option>14:30</option><option>16:00</option><option>18:30</option>
+            <option>20:00</option><option>21:30</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="people">Personas <span aria-hidden="true">*</span></label>
+          <select id="people" name="people" required aria-required="true">
+            <option value="">Mesa para...</option>
+            <option>1 persona</option><option>2 personas</option><option>3 personas</option>
+            <option>4 personas</option><option>5 personas</option><option>6 personas</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="email">Email <span style="font-weight:400;text-transform:none;">(opcional)</span></label>
+          <input id="email" name="email" type="email" placeholder="tu@email.com" autocomplete="email">
+        </div>
+        <div class="form-field full">
+          <label for="message">Notas</label>
+          <textarea id="message" name="message" rows="4" placeholder="Alergias, carrito, cumpleaños, etc." aria-describedby="message-hint"></textarea>
+          <span id="message-hint" style="font-size:.8rem;opacity:.7;">Opcional: cuéntanos lo que necesites.</span>
+        </div>
+      </div>
+      <button class="btn" type="submit" style="margin-top:22px;">Guardar reserva</button>
+      <div class="form-result" id="reservation-result" role="alert" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <img class="footer-logo" src="assets/img/boggo-footer-logo.webp" alt="Logo Boggo Fresh Bagel">
+      
+    </div>
+    <div class="footer-col">
+      <h3>Enlaces</h3>
+      <a href="faq.html">Preguntas Frecuentes</a>
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="encuentranos.html">Encuéntranos</a>
+    </div>
+    <div class="footer-col">
+      <h3>Horario</h3>
+      <p>Lunes a jueves: 10:00 - 22:00<br>Viernes y sábado: 10:00 - 23:30<br>Domingo: 10:00 - 17:00</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Boggo Fresh Bagel. Todos los derechos reservados.</div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Club Boggo: suma puntos en cada visita y canjéalos por merchandising exclusivo. Stickers, camisetas, gorras y más.">
+  <title>Club Boggo | Puntos y Merchandising</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/webp" href="assets/img/boggo-favicon.webp">
+</head>
+<body data-page="club">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Boggo Fresh Bagel — ir al inicio">
+      <img src="assets/img/logo-boggo-transparent.webp" alt="Boggo Fresh Bagel">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="site-navigation">Menú</button>
+    <nav class="site-nav" id="site-navigation" aria-label="Navegación principal">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="carta.html" data-nav="carta">Carta</a>
+      <a href="reserva.html" data-nav="reserva">Reserva tu mesa</a>
+      <a href="club.html" data-nav="club" aria-current="page">Club Boggo</a>
+      <a href="encuentranos.html" data-nav="encuentranos">Encuéntranos</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+
+<section class="page-hero" aria-label="Club Boggo">
+  <div class="container">
+    <div class="reveal-left">
+      <p class="eyebrow">Club Boggo</p>
+      <h1>Puntos con sabor.</h1>
+      <p class="lead">Suma puntos cada vez que comes en Boggo y canjéalos por detalles de la marca: stickers, camisetas, gorras, luncheras y más objetos con buen mood.</p>
+    </div>
+    <div class="page-stamp reveal-right"><img src="assets/img/brand/BOGGO-43.webp" alt="Camiseta Boggo Club"></div>
+  </div>
+</section>
+
+<section class="video-hero-banner" aria-label="Simulador de puntos y merchandising">
+  <div class="container club-layout">
+    <aside class="club-card reveal-left" aria-label="Simulador de puntos">
+      <p class="eyebrow">Simulador</p>
+      <h2>Calcula tus puntos.</h2>
+      <p>Por cada euro consumido en el local, tu cuenta del Club Boggo suma 10 puntos.</p>
+      <div class="points-meter" aria-live="polite">
+        <label for="ticket-amount">Importe del ticket (€)</label>
+        <input id="ticket-amount" type="number" min="0" value="18" step="0.5" aria-describedby="points-result" style="width:100%;margin-top:10px;">
+        <div class="points-result" id="points-result" aria-atomic="true">180 puntos</div>
+      </div>
+    </aside>
+    <div class="reveal-right">
+      <div class="section-heading left">
+        <p class="eyebrow">Merch canjeable</p>
+        <h2>Recompensas del club</h2>
+      </div>
+      <div class="merch-grid" id="merch-grid" aria-label="Catálogo de merchandising canjeable"></div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <img class="footer-logo" src="assets/img/boggo-footer-logo.webp" alt="Logo Boggo Fresh Bagel">
+      
+    </div>
+    <div class="footer-col">
+      <h3>Enlaces</h3>
+      <a href="faq.html">Preguntas Frecuentes</a>
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="encuentranos.html">Encuéntranos</a>
+    </div>
+    <div class="footer-col">
+      <h3>Horario</h3>
+      <p>Lunes a jueves: 10:00 - 22:00<br>Viernes y sábado: 10:00 - 23:30<br>Domingo: 10:00 - 17:00</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Boggo Fresh Bagel. Todos los derechos reservados.</div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
