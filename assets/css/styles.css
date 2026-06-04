@@ -353,10 +353,13 @@ input[type="submit"]:hover {
   box-shadow: 10px 10px 0 var(--boggo-green-dark);
 }
 .panel-inner {
-  background: rgba(255, 248, 234, .94);
+  background:
+    linear-gradient(rgba(255,248,234,.82), rgba(255,248,234,.82)),
+    url('../img/brand/BOGGO-43.webp') center / cover no-repeat;
   border: 3px solid var(--boggo-green-dark);
   border-radius: 24px;
   padding: clamp(24px, 5vw, 52px);
+  overflow: hidden;
 }
 
 /* --- Stats --- */
@@ -1196,8 +1199,7 @@ input:focus, select:focus, textarea:focus { box-shadow: 0 0 0 4px rgba(117,139,1
   .page-hero .container { grid-template-columns: 1fr !important; }
   .page-stamp { width: 90%; max-width: 420px; margin: 0 auto; }
   .manifesto-grid { grid-template-columns: 1fr; }
-  .manifesto-img-stack { flex-direction: row; overflow-x: auto; }
-  .manifesto-img-stack .brand-sticker { min-width: 130px; }
+  .manifesto-img-stack { display: none; }
   .brand-mosaic { grid-template-columns: repeat(2, 1fr); }
   .img-ticker-track img { width: 88px; height: 88px; }
   .info-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
